@@ -1,5 +1,5 @@
 import pandas as pd
-#import numpy as np
+
 import matplotlib.pyplot as plt
 
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -31,16 +31,3 @@ def recommend(item_id, num):
         print("Recommended: " + item(rec[1]))
 
 recommend(item_id=103, num=6)
-
-#names = ['i25', 'i33', 'i37', 'i63', 'i75', 'i92']
-# for name in names:
-# print("Recommended: " + item(name[1]))
-
-#values = [50, 45, 50, 50, 6, 66]
-
-#plt.figure(figsize=(5, 3))
-#plt.bar(names, values)
-#plt.xlabel('User ID --->')
-#plt.ylabel('Recommendation --->')
-#plt.suptitle('Categorical Plotting')
-#plt.show()
